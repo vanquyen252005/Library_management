@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "year": 1925,
+      "genre": "Classic"
+    },
+    {
+      "id": 2,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "year": 1960,
+      "genre": "Fiction"
+    },
+    {
+        "id" : 3,
+        "title" : "Van hoc Viet Nam",
+        "author": "Ngo Tat To",
+        "year" : 1945,
+        "genre": "khong biet"
+    }
+  ]
+  

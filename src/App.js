@@ -10,7 +10,7 @@ function App() {
     year: '',
     genre: ''
   });
-  const [showForm, setShowForm] = useState(false); // State để kiểm soát hiển thị form
+  const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -29,21 +29,23 @@ function App() {
     fetchData();
   }, []);
 
-  // Hàm xử lý khi nhập dữ liệu vào form
   const handleInputChange = (e) => {
     setNewBook({ ...newBook, [e.target.name]: e.target.value });
   };
 
-  // Hàm thêm sách mới
   const addBook = () => {
     if (!newBook.id || !newBook.title || !newBook.author || !newBook.year || !newBook.genre) {
       alert("Vui lòng nhập đầy đủ thông tin!");
       return;
     }
 
-    setBooks([...books, newBook]); // Thêm sách vào danh sách
-    setNewBook({ id: '', title: '', author: '', year: '', genre: '' }); // Reset form
-    setShowForm(false); // Ẩn form sau khi thêm sách
+    setBooks([...books, newBook]); 
+    setNewBook({ id: '', title: '', author: '', year: '', genre: '' }); 
+    setShowForm(false); 
+  };
+
+  const deleteBook = (id) => {
+    setBooks(books.filter(book => book.id !== id));
   };
 
   return (
@@ -58,6 +60,7 @@ function App() {
               <th>Author</th>
               <th>Year</th>
               <th>Genre</th>
+              <th>Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -68,15 +71,15 @@ function App() {
                 <td>{book.author}</td>
                 <td>{book.year}</td>
                 <td>{book.genre}</td>
+                <td>
+                  <button className="delete-btn" onClick={() => deleteBook(book.id)}>Delete</button>
+                </td>
               </tr>
             ))}
           </tbody>
         </table>
-
-        {/* Nút mở form */}
         <button className="open-form-btn" onClick={() => setShowForm(true)}>Add Book</button>
 
-        {/* Form nhập liệu, chỉ hiển thị khi showForm === true */}
         {showForm && (
           <div className="add-book-form">
             <h3>Add a New Book</h3>

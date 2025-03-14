@@ -69,3 +69,41 @@
 .add-book-form input {
   color: white;
 }
+.UserTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.UserTable th, 
+.UserTable td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.UserTable th {
+  background-color: #3498db;
+  color: white;
+  text-transform: uppercase;
+}
+
+.UserTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.UserTable tr:hover {
+  background-color: #f1f1f1;
+  transition: 0.3s;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+

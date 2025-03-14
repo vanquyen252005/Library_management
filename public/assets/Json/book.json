@@ -4,21 +4,24 @@
       "title": "The Great Gatsby",
       "author": "F. Scott Fitzgerald",
       "year": 1925,
-      "genre": "Classic"
+      "genre": "Classic",
+      "user": "Pham Van Dong"
     },
     {
       "id": 2,
       "title": "To Kill a Mockingbird",
       "author": "Harper Lee",
       "year": 1960,
-      "genre": "Fiction"
+      "genre": "Fiction",
+      "user": "Pham Van Quyen"
     },
     {
         "id" : 3,
         "title" : "Van hoc Viet Nam",
         "author": "Ngo Tat To",
         "year" : 1945,
-        "genre": "khong biet"
+        "genre": "khong biet",
+        "user": "Pham Van Hung"
     }
   ]
   

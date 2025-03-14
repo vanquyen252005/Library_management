@@ -1,0 +1,39 @@
+{
+    "borrowers": [
+      {
+        "id": 1,
+        "name": "Nguyễn Văn A",
+        "email": "nguyenvana@example.com",
+        "phone": "0987654321",
+        "booksBorrowed": [
+          {
+            "bookId": 101,
+            "title": "Lập trình JavaScript",
+            "borrowDate": "2024-03-10",
+            "returnDate": "2024-03-20"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Trần Thị B",
+        "email": "tranthib@example.com",
+        "phone": "0978123456",
+        "booksBorrowed": [
+          {
+            "bookId": 102,
+            "title": "Học ReactJS",
+            "borrowDate": "2024-03-12",
+            "returnDate": "2024-03-22"
+          },
+          {
+            "bookId": 103,
+            "title": "Lập trình NodeJS",
+            "borrowDate": "2024-03-14",
+            "returnDate": "2024-03-24"
+          }
+        ]
+      }
+    ]
+  }
+  
